@@ -1,4 +1,7 @@
 var install = function (Vue, options) {
+  if (typeof options.callback !== 'function') {
+    return
+  } 
   const kode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
   const length = kode.length
   var pos = 0
